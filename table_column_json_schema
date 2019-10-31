@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "array",
+      "items": {}
+    },
+    "visibility": {
+      "type": "string",
+      "enum": [
+        "confidential",
+        "private",
+        "protected",
+        "internal",
+        "public"
+      ],
+      "default": "internal"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "ugc",
+        "houzz",
+        "3rd"
+      ],
+      "default": "houzz"
+    },
+    "pii": {
+      "type": "boolean",
+      "default": false
+    },
+    "fk": {
+      "type": "string"
+    },
+    "enum_values": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "required": [
+    "description"
+  ],
+  "optional": [
+    "roles",
+    "visibility",
+    "source",
+    "fk",
+    "pii",
+    "enum_values"
+  ]
+}
