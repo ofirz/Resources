@@ -36,7 +36,7 @@
       "type": "string"
     },
     "enum_values": {
-      "type": "array",
+      "type": "object",
       "items": {}
     }
   },
